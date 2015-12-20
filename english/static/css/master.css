@@ -1,0 +1,62 @@
+
+
+
+.bubble-container {
+background-color: #E0EEEE;
+margin: 0px auto;
+padding-right:20px;
+padding-left:10px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius:10px;
+}
+.inside-bubble {
+background-color: #FFFFFF;
+min-height: 50%;
+padding-right: 1%;
+padding-left: 1%;
+padding-top: 1%;
+padding-bottom: 1%;
+border-radius: 1em;
+}
+
+
+
+/* This parent can be any width and height */
+.block {
+  text-align: center;
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */ 
+.absolute-centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
+
+.centerDiv{
+    width:300px;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-100px 0 0 -150px;
+}
+
+.label-large {
+    padding: 5px 5px 5px;
+    font-size: 20px
+}
+.invisible{
+display:none;
+}

@@ -1,0 +1,14 @@
+pyramid
+SQLAlchemy
+transaction
+pyramid_tm
+pyramid_debugtoolbar
+zope.sqlalchemy
+waitress
+beaker
+wtforms
+velruse
+mysql-python
+pyramid_beaker
+pyramid_mailer
+cryptacular

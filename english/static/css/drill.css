@@ -1,0 +1,82 @@
+.flashcard,
+.drillResults,
+.flashcard .nextFCard,
+.flashcard .answer,
+.continue,
+.startDrill
+{
+    display:none;
+}
+
+.green
+{
+color:	#59983a;
+}
+.orange
+{
+color:#FF9900;
+}
+.red
+{
+color:#C00000;
+}
+.blue
+{
+color:#008B8B;
+}
+.clock{
+	/* The .clock div. Created dynamically by jQuery */
+	background-color:#F8F8F8;
+	height:100px;
+	width:100px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+}
+
+.clock .rotate{
+	/* There are two .rotate divs - one for each half of the background */
+	position:absolute;
+	width:100px;
+	height:100px;
+	top:0;
+	left:0;
+}
+
+.rotate.right{
+	display:none;
+	z-index:11;
+}
+
+.clock .bg, .clock .front{
+	width:50px;
+	height:100px;
+	background-color:#F8F8F8;
+	position:absolute;
+	top:0;
+}
+
+.clock .display{
+	/* Holds the number of seconds, minutes or hours respectfully */
+	position:absolute;
+	width:100px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	z-index:20;
+	color:#252525;
+	font-size:30px;
+	text-align:center;
+	top:32px;
+	left:0;
+	
+	/* CSS3 text shadow: */
+	text-shadow:2px 2px 3px #333333;
+}
+
+/* The left part of the background: */
+
+.clock .bg.left{ left:0; }
+.clock .front.left{
+	left:0;
+	z-index:10;
+}
+
